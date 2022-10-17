@@ -9,6 +9,8 @@
     <title>LTS Hours</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script> <!--this will load everything first before the js-->
+    
 </head>
 
 <body>
@@ -41,24 +43,23 @@
         </figure>
     </section>
 
-    <main>
-        <p>
-            We are open 7 days a week!
-        </p>
-        <dl>
-            <dt>Sunday-Thursday</dt>
-            <dd>11am-9pm</dd>
-            <dt>Friday-Saturday</dt>
-            <dd>11am-11pm</dd>
-        </dl>
-        <p>
-            <a href="#">Back To Top</a>
-        </p>
+    <main class="main">
+        <article class="main__article">  
+            <h2>Hours</h2>
+            <p>
+                We are open 7 days a week!
+            </p>
+            <dl>
+                <dt>Sunday-Thursday</dt>
+                <dd>11am-9pm</dd>
+                <dt>Friday-Saturday</dt>
+                <dd>11am-11pm</dd>
+            </dl>
+        </article>
     </main>
-    <hr>
     <footer class="footer">
         <p>
-            <span class="nowrap">Copyright &copy;</span>
+            <span class="nowrap">Copyright &copy; <time id="year"></time></span>
             <span class="nowrap">Little Taco Shop</span>
         </p>
     </footer>
